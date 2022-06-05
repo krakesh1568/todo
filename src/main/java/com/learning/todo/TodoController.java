@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TodoController {
 
     @GetMapping("/todos/dummy")
-    public String dummy()
+    public int dummy()
     {
-        return "dummy data";
+        return 1+5;
     }
 }
