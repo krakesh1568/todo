@@ -7,8 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class TodoController {
 
     @GetMapping("/todos/dummy")
-    public double dummy()
+    public boolean dummy()
     {
-        return 1+5.8;
+        if (1==2)
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
