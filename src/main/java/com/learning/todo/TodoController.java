@@ -12,7 +12,7 @@ public class TodoController {
         int[] arr = new int[10];
         for(int i=0;i<10;i++)
         {
-            arr[i] = i + 2;
+            arr[i] = i + i*2;
         }
 
         return arr;
