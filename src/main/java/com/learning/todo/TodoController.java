@@ -7,10 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class TodoController {
 
     @GetMapping("/todos/dummy")
-    public Integer dummy()
+    public int[] dummy()
     {
-        int a = 15;
-        Integer objint = new Integer(a);
-        return objint;
+        int[] arr = new int[10];
+        for(int i=0;i<10;i++)
+        {
+            arr[i] = i + 2;
+        }
+
+        return arr;
     }
 }
